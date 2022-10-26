@@ -55,7 +55,7 @@ filename = args.checkpoint
 if args.ind_dataset == 'svhn' and args.model == 'wideresnet':
     args.model = 'wideresnet16_8'
 
-print args
+print (args)
 
 ###########################
 ### Set up data loaders ###
