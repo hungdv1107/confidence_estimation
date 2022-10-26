@@ -222,8 +222,8 @@ for epoch in range(args.epochs):
     for i, (images, labels) in enumerate(progress_bar):
         progress_bar.set_description('Epoch ' + str(epoch))
 
-        images = Variable(images).cuda(async=Flase)
-        labels = Variable(labels).cuda(async=Flase)
+        images = Variable(images).cuda(async=false)
+        labels = Variable(labels).cuda(async=false)
         labels_onehot = Variable(encode_onehot(labels, num_classes))
 
         cnn.zero_grad()
